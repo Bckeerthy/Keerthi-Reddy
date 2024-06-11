@@ -1,0 +1,15 @@
+def sof(c):
+    rem=0
+    sum=0
+    while c!=0:
+        rem=c%10
+        sum=sum+rem
+        c=c//10
+        return sum
+a=int(input())
+sumofdig=sof(a)
+if a%sumofdig==0:
+    print("harshad number")
+else:
+    print(" not harshad number")
+    
